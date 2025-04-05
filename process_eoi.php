@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {// Sanitize and validate inputs
     $stmt->close();
     $conn->close();
 } else {
-    header("Location: apply.html");
+    header("Location: apply.php");
     exit();
 }
 ?>
