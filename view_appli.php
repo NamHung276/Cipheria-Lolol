@@ -35,8 +35,8 @@ $result = $conn->query($sql);
                     <td><?= $row['phone']; ?></td>
                     <td><?= $row['skills']; ?></td>
                     <td>
-                        <a href="edit_application.php?id=<?= $row['id']; ?>">Edit</a> |
-                        <a href="delete_application.php?id=<?= $row['id']; ?>" onclick="return confirm('Are you sure?');">Delete</a>
+                        <a href="edit_apply.php?id=<?= $row['id']; ?>">Edit</a> |
+                        <a href="delete_apply.php?id=<?= $row['id']; ?>" onclick="return confirm('Are you sure?');">Delete</a>
                     </td>
                 </tr>
             <?php endwhile; ?>
