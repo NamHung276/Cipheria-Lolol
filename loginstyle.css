@@ -59,18 +59,6 @@ transform: translateY(-3px);
 box-shadow: 0px 0px 20px rgba(255, 255, 255, 1);
 }
 
-.forgot-password {
-    color: white;
-    text-decoration: underline;
-    font-size: 13px; /* Adjust this value for smaller text */
-}
-
-.login-link {
-    color: white;
-    text-decoration: underline;
-}
-
-
 .back-link {
 display: block;
 margin-top: 10px;
@@ -98,6 +86,7 @@ position: relative;
 transform: translateY(-3px);
 color: white;
 }
+
 
 
 

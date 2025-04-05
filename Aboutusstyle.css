@@ -46,7 +46,7 @@ body {
 
 .info-list dt {
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: cyan;
     margin-top: 10px;
 }
 
@@ -70,7 +70,7 @@ body {
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    width: 150px;
+    width: 200px;
     border: 2px solid white;
     box-shadow: 0 0 10px white;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
@@ -158,13 +158,13 @@ body {
 }
 
 .contact a:hover {
-    text-decoration: none;
+    text-decoration: underline;
     color: white;
 }
 
 .back-to-home:hover {
-    text-decoration: none;
-    color: rgb(235, 235, 235);
+    text-decoration: underline;
+    color: cyan;
 }
 .back-to-home {
     display: block;

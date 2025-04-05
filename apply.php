@@ -10,15 +10,15 @@
 <body>
     <div class="container">
         <h2>Job Application Form</h2>
-        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+        <form action="process_eoi.php" method="POST">
             <label for="jobRef">Job Reference Number:</label>
             <input type="text" id="jobRef" name="jobRef" pattern="[A-Za-z0-9]{5}" required>
             
             <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" value="" pattern="^[a-zA-Z]+$" maxlength="15" title="alphabet only" required>
+            <input type="text" id="firstName" name="firstName" maxlength="20" required>
             
             <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" value="" pattern="^[a-zA-Z]+$" maxlength="15" title="alphabet only" required>
+            <input type="text" id="lastName" name="lastName" maxlength="20" required>
             
             <label for="dob">Date of Birth:</label>
             <input type="date" id="dob" name="dob" required>
@@ -29,8 +29,8 @@
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="gender" value="Female" required>
                 <label for="female">Female</label>
-                <input type="radio" id="other" name="gender" value="Other" required>
-                <label for="other">Other</label>
+                <input type="radio" id="otherGender" name="gender" value="Other" required>
+                <label for="otherGender">Other</label>
             </fieldset>
             
             <label for="address">Address:</label>
@@ -53,26 +53,26 @@
             </select>
             
             <label for="postcode">Postcode:</label>
-            <input type="text" id="postcode" name="postcode" pattern="\d{4}" title="4 number only"required>
+            <input type="text" id="postcode" name="postcode" pattern="\d{4}" required>
             
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" title="abcd.@gmail.com" required>
+            <input type="email" id="email" name="email" required>
             
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" pattern="\d{10}" required>
+            <input type="tel" id="phone" name="phone" required>
             
             <fieldset>
                 <legend>Skills:</legend>
-                <input type="checkbox" id="html" name="skills" value="HTML" checked>
+                <input type="checkbox" id="html" name="skills[]" value="HTML">
                 <label for="html">HTML</label>
-                <input type="checkbox" id="css" name="skills" value="CSS">
+                <input type="checkbox" id="css" name="skills[]" value="CSS">
                 <label for="css">CSS</label>
-                <input type="checkbox" id="js" name="skills" value="JavaScript">
+                <input type="checkbox" id="js" name="skills[]" value="JavaScript">
                 <label for="js">JavaScript</label>
-                <input type="checkbox" id="python" name="skills" value="Python">
+                <input type="checkbox" id="python" name="skills[]" value="Python">
                 <label for="python">Python</label>
-                <input type="checkbox" id="other" name="skills" value="Other">
-                <label for="other">Other Skills...</label>
+                <input type="checkbox" id="otherSkill" name="skills[]" value="Other">
+                <label for="otherSkill">Other Skills...</label>
             </fieldset>
             
             <label for="otherSkills">If other, please specify:</label>

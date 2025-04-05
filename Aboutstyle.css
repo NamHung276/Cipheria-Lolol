@@ -73,7 +73,7 @@ fieldset {
 
 .back-to-home:hover {
     text-decoration: underline;
-    color: rgb(207, 208, 208);
+    color: cyan;
 }
 .back-to-home {
     display: block;
