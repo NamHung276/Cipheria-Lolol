@@ -1,8 +1,8 @@
 <?php
-$host = "localhost"; // Change this if using a different host
-$username = "root"; // Change to your MySQL username
-$password = ""; // Change to your MySQL password
-$database = "job_portal"; // Your database name
+$host = "feenix-mariadb.swin.edu.au"; // Change this if using a different host
+$username = "s105556375"; // Change to your MySQL username
+$password = "271106"; // Change to your MySQL password
+$database = "s105556375_db"; // Your database name
 
 $conn = new mysqli($host, $username, $password, $database);
 
